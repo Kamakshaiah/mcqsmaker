@@ -8,7 +8,7 @@ class mcqs:
         self.path = file_path
         self.answers_path = answers_path
 
-    def makeText(self):
+    def makeStatements(self):
         ''' converts text file to sentences '''
         import re
         with open(self.path, 'r+') as f:
@@ -16,7 +16,7 @@ class mcqs:
             sentences = re.split(r' *[\.\?!][\'"\)\]]* *', data)
             return sentences
 
-    def correctAnswers(self):
+    def createAnswers(self):
         ''' returns correct answers '''
         import csv
         with open(self.answers_path, 'r+') as f:

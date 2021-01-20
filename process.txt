@@ -1,0 +1,5 @@
+1. import text answers - mcqs(file_path, answers_path)
+2. create sentences - makeStatements()
+3. create answers - createAnswers()
+4. make MCQs - makeMCQs(sentences, answers)
+5. save file - saveQns(savefilepath, qns, answers)
